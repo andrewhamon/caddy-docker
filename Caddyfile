@@ -1,0 +1,9 @@
+hamon.cc {
+  root ./hamon.cc
+  tls {$LE_EMAIL}
+  git {
+    repo git@github.com:andrewhamon/andrewhamon.github.io.git
+    hook /webhook {$WEBHOOK_SECRET}
+    interval 86400
+  }
+}
