@@ -1,5 +1,7 @@
 hamon.cc {
   root ./hamon.cc
+  gzip
+  minify
   tls {$LE_EMAIL}
   git {
     repo git@github.com:andrewhamon/andrewhamon.github.io.git
