@@ -2,7 +2,10 @@ version: '2'
 
 services:
   web:
-    image: andrewhamon/caddy
+    build:
+      context: .
+      args:
+        - plugins=git,minify
     environment:
       - LE_EMAIL=andrew@hamon.cc
       - WEBHOOK_SECRET=${WEBHOOK_SECRET}
